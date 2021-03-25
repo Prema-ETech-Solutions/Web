@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Links are found in nearly all web pages. Links allow users to click their way from page to page. -->
+    <!-- HTML Links - Hyperlinks -->
+    <!-- HTML links are hyperlinks. -->
+    <!-- You can click on a link and jump to another document. -->
+    <!-- When you move the mouse over a link, the mouse arrow will turn into a little hand. -->
+    <!-- Note: A link does not have to be text. A link can be an image or any other HTML element! -->
+
+    <!-- HTML Links - Syntax -->
+    <!-- The HTML <a> tag defines a hyperlink. It has the following syntax: -->
+    <!-- <a href="url">link text</a> -->
+
+    <!-- The most important attribute of the <a> element is the href attribute, which indicates the link's destination. -->
+    <!-- The link text is the part that will be visible to the reader. -->
+    <!-- Clicking on the link text, will send the reader to the specified URL address. -->
+
+    <a href="http://google.com">GO TO GOOGLE</a>
+    <br />
+
+    <!-- By default, links will appear as follows in all browsers: -->
+    <!-- An unvisited link is underlined and blue -->
+    <!-- A visited link is underlined and purple -->
+    <!-- An active link is underlined and red -->
+    <!-- Tip: Links can of course be styled with CSS, to get another look! -->
+
+    <!-- HTML Links - The target Attribute -->
+    <!-- By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. -->
+    <!-- The target attribute specifies where to open the linked document. -->
+    <!-- The target attribute can have one of the following values: -->
+    <!-- _self - Default. Opens the document in the same window/tab as it was clicked -->
+    <!-- _blank - Opens the document in a new window or tab -->
+    <!-- _parent - Opens the document in the parent frame -->
+    <!-- _top - Opens the document in the full body of the window -->
+
+    <a href="http://google.com" target="_self">Self GO TO GOOGLE</a><br />
+    <a href="http://google.com" target="_blank">Blank GO TO GOOGLE</a><br />
+    <a href="http://google.com" target="_parent">Parent GO TO GOOGLE</a><br />
+    <a href="http://google.com" target="_top">TOP GO TO GOOGLE</a><br />
+
+    <!-- Absolute URLs vs. Relative URLs -->
+    <!-- Both examples above are using an absolute URL (a full web address) in the href attribute. -->
+    <!-- A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part): -->
+
+    <h1>Absolute URLs</h1>
+    <a href="http://www.google.com">GO GOOGLE</a>
+    <h1>Relative URLs</h1>
+    <a href="01_Basic.html">01 HTML</a><br />
+
+    <!-- HTML Links - Use an Image as a Link -->
+    <!-- To use an image as a link, just put the <img> tag inside the <a> tag: -->
+    <a href="http://www.google.com">
+      <img
+        src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/evolving_google_identity_2x1.jpg"
+        alt="Google Not Found"
+        height="100px"
+        width="400px"
+        title="Google"
+    /></a>
+    <br>
+    <!-- Link to an Email Address -->
+    <!-- Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email): -->
+    <a href="mailto:name@gmail.com">
+        Send Mail
+    </a>
+
+    <!-- Chapter Summary -->
+    <!-- Use the <a> element to define a link -->
+    <!-- Use the href attribute to define the link address -->
+    <!-- Use the target attribute to define where to open the linked document -->
+    <!-- Use the <img> element (inside <a>) to use an image as a link -->
+    <!-- Use the mailto: scheme inside the href attribute to create a link that opens the user's email program -->
+  </body>
+</html>

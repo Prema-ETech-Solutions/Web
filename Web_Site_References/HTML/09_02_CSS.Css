@@ -1,0 +1,13 @@
+/* The external style sheet can be written in any text editor.
+The file must not contain any HTML code,
+and must be saved with a .css extension. */
+/* Here is what the "styles.css" file looks like: */
+body {
+  background-color: rebeccapurple;
+}
+h1 {
+  color: plum;
+}
+p {
+  color: gold;
+}

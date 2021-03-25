@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- The HTML <picture> element allows you to display different pictures for different devices or screen sizes. -->
+    <!-- The HTML <picture> Element -->
+    <!-- The HTML <picture> element gives web developers more flexibility in specifying image resources.        
+    The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+    Each <source> element has a media attribute that defines when the image is the most suitable. -->
+<picture>
+  <source media="(min-width: 650px)" srcset="/Image/cyber-security-books.jpg">
+  <source media="(min-width: 465px)" srcset="/Image/html5-640x960.png">
+  <img src="/Image/triumph-rocket-III.jpg" style="width:auto;">
+</picture>
+
+
+
+
+</body>
+</html>

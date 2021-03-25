@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Images can improve the design and the appearance of a web page. -->
+    <!-- HTML Images Syntax -->
+    <!-- The HTML <img> tag is used to embed an image in a web page. -->
+    <!-- Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+    The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+    The <img> tag has two required attributes:
+    src - Specifies the path to the image
+    alt - Specifies an alternate text for the image -->
+    <!-- <img src="url" alt="alternate_text"> -->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWGvBIMKjRqiKRVEeGP4SU5-ODjSYCNNzXBw&usqp=CAU"
+      alt="Car Not Found"
+    />
+    <!-- The src Attribute  -->
+    <!-- The required src attribute specifies the path (URL) to the image. -->
+    <!-- Note: When a web page loads; it is the browser, at that moment, 
+    that gets the image from a web server and inserts it into the page. 
+    Therefore,make sure that the image actually stays in the same spot in relation to the
+    web page, otherwise your visitors will get a broken link icon. The broken
+    link icon and the alt text are shown if the browser cannot find the image. -->
+    <img src="/Image/triumph-rocket-III.jpg" alt="Bike Not Found" />
+    <!-- The alt Attribute -->
+    <!-- The required alt attribute provides an alternate text for an image, 
+    if the user for some reason cannot view it (because of slow connection, an error in
+    the src attribute, or if the user uses a screen reader). -->
+    <!-- The value of the alt attribute should describe the image: -->
+    <img src="/Image/triumph-rocket-IIII.jpg" alt="Bike Not Found" />
+
+    <!-- If a browser cannot find an image, it will display the value of the alt attribute: -->
+    <img
+      src="https://i.pinimg.com/originals/72/0c/a5/720ca5bb5a0a70ea0fb60e7db560c952.gif"
+      alt="Car Not Firing"
+    />
+
+    <!-- Tip: A screen reader is a software program that reads the HTML code, 
+    and allows the user to "listen" to the content. 
+    Screen readers are useful for people who are visually impaired or learning disabled. -->
+
+    <!-- Image Size - Width and Height -->
+    <!-- You can use the style attribute to specify the width and height of an image. -->
+    <img
+      src="/Image/triumph-rocket-III.jpg"
+      alt="Bike Not Found"
+      style="height: 500px; width: 500px"
+    />
+    <!-- Alternatively, you can use the width and height attributes: -->
+    <img
+      src="/Image/triumph-rocket-III.jpg"
+      alt="Bike Not Found "
+      height="100px"
+      width="100px"
+    />
+
+    <!-- The width and height attributes always define the width and height of the image in pixels. -->
+
+    <!-- Width and Height, or Style? -->
+    <!-- The width, height, and style attributes are all valid in HTML. -->
+    <!-- However, we suggest using the style attribute. It prevents styles sheets from changing the size of images: -->
+    
+    
+      <!-- Image as a Link -->
+    
+      <!-- To use an image as a link, put the <img> tag inside the <a> tag: -->
+    
+        <a
+      href="https://www.google.com/search?q=bike&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiJptyy88jvAhUkgtgFHTMyDo0Q_AUoAnoECAMQBA&biw=1680&bih=911"
+      target="_blank"
+      ><img src="/Image/triumph-rocket-III.jpg" alt="Bike Not Found" title="Bike" style="width: 200px;width: 200px;"></a>
+
+      <!-- Image Floating -->
+      <!-- Use the CSS float property to let the image float to the right or to the left of a text: -->
+      <p>
+        <img src="https://64.media.tumblr.com/bebb47cfbfa8ba7696709e9c5e0e440f/tumblr_msha19HE921r1mkubo1_500.gif" alt="Car Not Found" style="float: right;max-width: fit-content;max-height: fit-content;">
+      </p>
+
+      <!-- Chapter Summary -->
+      <!-- Use the HTML <img> element to define an image -->
+      <!-- Use the HTML src attribute to define the URL of the image -->
+      <!-- Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed -->
+      <!-- Use the HTML width and height attributes or the CSS width and height properties to define the size of the image -->
+      <!-- Use the CSS float property to let the image float to the left or to the right -->
+  </body>
+</html>
