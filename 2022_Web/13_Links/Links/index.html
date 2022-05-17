@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--  
+        Links are found in nearly all web pages. Links allow users to click their way from page to page.
+
+        HTML Links - Hyperlinks
+        HTML links are hyperlinks.
+
+        You can click on a link and jump to another document.
+
+        When you move the mouse over a link, the mouse arrow will turn into a little hand.
+    -->
+    <!-- 
+        HTML Links - Syntax
+        The HTML <a> tag defines a hyperlink. It has the following syntax: -->
+
+    <!-- The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+        The link text is the part that will be visible to the reader.
+        Clicking on the link text, will send the reader to the specified URL address.
+    -->
+    <a href="https://github.com/Premdangle">Visit Github</a>
+    <!--  
+        By default, links will appear as follows in all browsers:
+
+        An unvisited link is underlined and blue
+        A visited link is underlined and purple
+        An active link is underlined and red
+    -->
+    <!--  
+        HTML Links - The target Attribute
+        By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+        The target attribute specifies where to open the linked document.
+
+        The target attribute can have one of the following values:
+
+        _self - Default. Opens the document in the same window/tab as it was clicked
+        _blank - Opens the document in a new window or tab
+        _parent - Opens the document in the parent frame
+        _top - Opens the document in the full body of the window
+    -->
+    <h2>The target Attribute</h2>
+
+    <a href="../../02_Basic/index.html" target="_blank">Visit Basic</a>
+
+    <p>
+      If target="_blank", the link will open in a new browser window or tab.
+    </p>
+    <!--  
+        Absolute URLs vs. Relative URLs
+        Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+        A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+    -->
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="../../02_Basic/img/html.png">HTML Images</a></p>
+
+    <!--
+        HTML Links - Use an Image as a Link
+        To use an image as a link, just put the <img> tag inside the <a> tag: -->
+    <a href="../../02_Basic/img/html.png">
+      <img
+        src="../../02_Basic/img/html.png"
+        alt="HTML tutorial"
+        style="width: 100px; height: 100px"
+      />
+    </a>
+
+    <!--  
+        Link to an Email Address
+        Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+    -->
+    <h2>Link to an Email Address</h2>
+
+    <p>
+      To create a link that opens in the user's email program (to let them send
+      a new email), use mailto: inside the href attribute:
+    </p>
+
+    <p><a href="mailto:premdangle@outlook.com">Send email</a></p>
+
+    <!--  
+        Button as a Link
+        To use an HTML button as a link, you have to add some JavaScript code.
+
+        JavaScript allows you to specify what happens at certain events, such as a click of a button:
+    -->
+    <button onclick="document.location='../../02_Basic/img/html.png'">
+      HTML IMG
+    </button>
+
+    <!-- Link Titles
+    The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element. -->
+    <h2>Link Titles</h2>
+    <p>
+      The title attribute specifies extra information about an element. The
+      information is most often shown as a tooltip text when the mouse moves
+      over the element.
+    </p>
+    <a href="../../02_Basic/img/html.png" title="Go to W3Schools HTML section"
+      >Visit our HTML Tutorial</a
+    >
+
+  </body>
+</html>
