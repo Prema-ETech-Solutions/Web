@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Images can improve the design and the appearance of a web page. -->
+
+    <img src="../Raw_Image/download.jfif" alt="Cars" />
+    <img src="../Raw_Image/download01.jfif" alt="Cars" />
+    <img src="../Raw_Image/download02.jfif" alt="Cars" />
+    <img src="../Raw_Image/download03.jfif" alt="Cars" />
+    <img src="../Raw_Image/download04.jfif" alt="Cars" />
+
+    <!--  
+        HTML Images Syntax
+        The HTML <img> tag is used to embed an image in a web page.
+
+        Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+        The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+        The <img> tag has two required attributes:
+
+        src - Specifies the path to the image
+        alt - Specifies an alternate text for the image
+
+        <img src="url" alt="alternatetext">
+
+
+        The src Attribute
+        The required src attribute specifies the path (URL) to the image.
+
+        Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+    -->
+    <img src="../Raw_Image/download05.jfif" alt="Car" />
+
+    <!--  
+        The alt Attribute
+        The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+            
+        The value of the alt attribute should describe the image:
+    -->
+    <img src="../Raw_Image/download030.jfif" alt="Car" />
+
+    <h4>Image Size - Width and Height</h4>
+    <p>
+      You can use the style attribute to specify the width and height of an
+      image.
+    </p>
+    <img
+      src="../Raw_Image/download05.jfif"
+      alt="Car"
+      style="width: 200px; height: 100px"
+    />
+    <p>Alternatively, you can use the width and height attributes:</p>
+    <img
+      src="../Raw_Image/download03.jfif"
+      alt="Cars"
+      width="100"
+      height="100"
+    />
+    <p>
+      The width and height attributes always define the width and height of the
+      image in pixels.
+    </p>
+
+    <h2>Width and Height, or Style?</h2>
+    <p>
+      The width, height, and style attributes are all valid in HTML. However, we
+      suggest using the style attribute. It prevents styles sheets from changing
+      the size of images:
+    </p>
+    <!-- <style>
+      img {
+        width: 100%;
+      }
+    </style> -->
+    <img
+      src="../Raw_Image/download03.jfif"
+      alt="Cars"
+      width="128"
+      height="128"
+    />
+
+    <img
+      src="../Raw_Image/download03.jfif"
+      alt="Cars"
+      style="width: 128px; height: 128px"
+    />
+
+    <h2>Images in Another Folder</h2>
+    <p>
+      If you have your images in a sub-folder, you must include the folder name
+      in the src attribute:
+    </p>
+    <img
+      src="../Raw_Image/download03.jfif"
+      alt="Car Icon"
+      style="width: 128px; height: 128px"
+    />
+    <h3>Images on Another Server/Website</h3>
+    <p>
+      Some web sites point to an image on another server. To point to an image
+      on another server, you must specify an absolute (full) URL in the src
+      attribute:
+    </p>
+    <img
+      src="http://www.google.com/a/help/intl/en/images/sites_35.gif"
+      alt="NO img"
+    />
+    <p>
+      Notes on external images: External images might be under copyright. If you
+      do not get permission to use it, you may be in violation of copyright
+      laws. In addition, you cannot control external images; it can suddenly be
+      removed or changed.
+    </p>
+    <h3>Animated Images</h3>
+    <p>HTML allows animated GIFs:</p>
+    <img src="../Raw_Image/Rotating_earth_(large).gif" alt="Computer Man" style="width:80px;height:88px;">
+    <h4>Image as a Link</h4> 
+    <p>To use an image as a link, put the <img> tag inside the <a> tag:
+    </p> 
+    <a href="../Raw_Image/download02.jfif">
+        <img src="../Raw_Image/download02.jfif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+    <h3>Image Floating</h3>
+    <p>Use the CSS float property to let the image float to the right or to the left of a text:
+    </p>
+    <p>
+        <img src="../Raw_Image/download02.jfif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.</p>
+        
+        <p><img src="../Raw_Image/Rotating_earth_(large).gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        The image will float to the left of the text.
+    </p>
+
+    <h3>Common Image Formats</h3>
+    <pre>
+        Abbreviation	File Format	                            File Extension
+        APNG	        Animated Portable Network Graphics	    .apng
+        GIF	            Graphics Interchange Format	            .gif
+        ICO	            Microsoft Icon	                        .ico, .cur
+        JPEG            Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+        PNG	            Portable Network Graphics	            .png
+        SVG	            Scalable Vector Graphics	            .svg
+    </pre>
+
+    <pre>
+        Chapter Summary
+        Use the HTML img element to define an image
+        Use the HTML src attribute to define the URL of the image
+        Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+        Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+        Use the CSS float property to let the image float to the left or to the right
+    </pre>
+</body>
+</html>

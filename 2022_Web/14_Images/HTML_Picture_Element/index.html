@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+    </p>
+    <h4>The HTML picture Element
+    </h4>
+    <pre>
+        The HTML picture element gives web developers more flexibility in specifying image resources.
+
+        The picture element contains one or more source elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+        
+        Each source element has a media attribute that defines when the image is the most suitable.
+    </pre>
+    <picture>
+        <source media="(min-width: 650px)" srcset="../Raw_Image/download01.jfif">
+        <source media="(min-width: 600px)" srcset="../Raw_Image/download05.jfif">
+        <img src="../Raw_Image/download04.jfif" style="width:auto;">
+    </picture>
+
+    <h4>
+        When to use the Picture Element
+    </h4>
+    <pre>
+        There are two main purposes for the <picture> element:
+        
+        1. Bandwidth
+        
+        2. Format Support
+        If you have a small screen or device, it is not necessary to load a large image file. The browser will use the first <source> element with matching attribute values, and ignore any of the following elements.
+        
+        Some browsers or devices may not support all image formats. By using the <picture> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.
+    </pre>
+
+    <picture>
+        <source srcset="../Raw_Image/download05.jfif">
+        <source srcset="../Raw_Image/download02.jfif">
+        <img src="../Raw_Image/download03.jfif" alt="Beatles" style="width:auto;">
+      </picture>
+</body>
+</html>
