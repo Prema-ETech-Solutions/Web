@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .left {
+        background-color: #2196f3;
+        padding: 20px;
+        float: left;
+        width: 20%; /* The width is 20%, by default */
+      }
+
+      .main {
+        background-color: #f1f1f1;
+        padding: 20px;
+        float: left;
+        width: 60%; /* The width is 60%, by default */
+      }
+
+      .right {
+        background-color: #04aa6d;
+        padding: 20px;
+        float: left;
+        width: 20%; /* The width is 20%, by default */
+      }
+
+      /* Use a media query to add a break point at 800px: */
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        }
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>
+      Resize the browser width and the image will change at 600px and 1500px.
+    </p>
+
+    <picture>
+      <source
+        srcset="../23_File_Paths/IMG/download.jfif"
+        media="(max-width: 600px)"
+      />
+      <source
+        srcset="../23_File_Paths/IMG/download01.jfif"
+        media="(max-width: 1000px)"
+      />
+      <source srcset="../23_File_Paths/IMG/download03.jfif" />
+      <img
+        src="../23_File_Paths/IMG/download04.jfif"
+        alt="Flowers"
+        style="width: auto"
+      />
+    </picture>
+    <h1 style="font-size: 10vw">Responsive Text</h1>
+
+    <p style="font-size: 5vw">
+      Resize the browser window to see how the text size scales.
+    </p>
+
+    <p style="font-size: 5vw">
+      Use the "vw" unit when sizing the text. 10vw will set the size to 10% of
+      the viewport width.
+    </p>
+
+    <p>
+      Viewport is the browser window size. 1vw = 1% of viewport width. If the
+      viewport is 50cm wide, 1vw is 0.5cm.
+    </p>
+
+    <br />
+    <br />
+    <br />
+
+    <h2>Media Queries</h2>
+    <p>Resize the browser window.</p>
+
+    <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+    <div class="left">
+      <p>Left Menu</p>
+    </div>
+
+    <div class="main">
+      <p>Main Content</p>
+    </div>
+
+    <div class="right">
+      <p>Right Content</p>
+    </div>
+  </body>
+</html>

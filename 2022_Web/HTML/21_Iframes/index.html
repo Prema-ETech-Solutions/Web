@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>HTML Iframe Syntax</h1>
+    <p>
+      The HTML iframe tag specifies an inline frame. An inline frame is used to
+      embed another document within the current HTML document.
+    </p>
+
+    <h2>
+      Iframe - Set Height and Width
+      <br />
+      Use the height and width attributes to specify the size of the iframe.
+      <br />
+      The height and width are specified in pixels by default:
+    </h2>
+    <h2>HTML Iframes</h2>
+    <p>
+      You can use the height and width attributes to specify the size of the
+      iframe:
+    </p>
+
+    <iframe
+      src="../02_Basic/index.html"
+      height="200"
+      width="300"
+      title="Iframe Example"
+    ></iframe>
+
+    <p style="font-size: large">
+      Or you can add the style attribute and use the CSS height and width
+      properties:
+    </p>
+    <iframe
+      src="../05_Headings/index.html"
+      style="height: 10%; width: 100%"
+      title="Iframe Example"
+    ></iframe>
+
+    <h2>Iframe - Remove the Border</h2>
+    <pre>
+        By default, an iframe has a border around it.
+        To remove the border, add the style attribute and use the CSS border property:
+    </pre>
+    <iframe
+      src="../07_Styles/index.html"
+      style="border: none"
+      title="Iframe Example"
+    ></iframe>
+    <pre>
+        With CSS, you can also change the size, style and color of the iframe's border:
+    </pre>
+    <iframe
+      src="../14_Images/Images/index.html"
+      style="border: 2px solid red"
+      title="Iframe Example"
+    ></iframe>
+
+    <pre>
+        An iframe can be used as the target frame for a link.
+        The target attribute of the link must refer to the name attribute of the iframe:
+    </pre>
+    <iframe
+      src="../14_Images/HTML_Picture_Element/index.html"
+      name="iframe_a"
+      title="Iframe Example"
+    ></iframe>
+
+    <p>
+      <a href="../14_Images/Image_Map/index.html" target="iframe_a">IMG MAP</a>
+    </p>
+
+    <h2>Chapter Summary
+    </h2>
+    <pre>
+        The HTML <iframe> tag specifies an inline frame
+        The src attribute defines the URL of the page to embed
+        Always include a title attribute (for screen readers)
+        The height and width attributes specifies the size of the iframe
+        Use border:none; to remove the border around the iframe
+    </pre>
+    </body>
+</html>
