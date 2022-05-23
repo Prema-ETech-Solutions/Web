@@ -1,0 +1,182 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>
+      This chapter describes the different types for the HTML input element.
+    </h3>
+    <h2>HTML Input Types</h2>
+    <pre>
+        Here are the different input types you can use in HTML
+    </pre>
+    <pre>
+        input type="button" 
+        input type="checkbox" 
+        input type="color" 
+        input type="date" 
+        input type="datetime-local"
+        input type="email" 
+        input type="file" 
+        input type="hidden" 
+        input type="image" 
+        input type="month" 
+        input type="number" 
+        input type="password" 
+        input type="radio" 
+        input type="range" 
+        input type="reset" 
+        input type="search" 
+        input type="submit" 
+        input type="tel"
+        input type="text"
+        input type="time"
+        input type="url"
+        input type="week"
+        input type="week"
+    </pre>
+    <h2>Text field</h2>
+    <p>
+      The <strong>input type="text"</strong> defines a one-line text input
+      field:
+    </p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>Note that the form itself is not visible.</p>
+    <p>Also note that the default width of a text field is 20 characters.</p>
+
+    <h2>Input Type Password</h2>
+    <p>input type="password" defines a password field</p>
+    <h2>Password field</h2>
+
+    <p>The <strong>input type="password"</strong> defines a password field:</p>
+
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      The characters in a password field are masked (shown as asterisks or
+      circles).
+    </p>
+    <h3>Input Type Submit</h3>
+
+    <pre>
+        input type="submit" defines a button for submitting form data to a form-handler.
+        The form-handler is typically a server page with a script for processing input data.
+        The form-handler is specified in the form's action attribute
+    </pre>
+
+    <h2>Submit Button</h2>
+
+    <p>
+      The <strong>input type="submit"</strong> defines a button for submitting
+      form data to a form-handler:
+    </p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      If you click "Submit", the form-data will be sent to a page called
+      "/action_page.php".
+    </p>
+
+    <h2>
+      If you omit the submit button's value attribute, the button will get a
+      default text
+    </h2>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" />
+    </form>
+    <h2>Input Type Reset</h2>
+    <pre>
+        input type="reset" defines a reset button that will reset all form values to their default values
+    </pre>
+
+    <h2>Reset Button</h2>
+
+    <p>
+      The <strong>input type="reset"</strong> defines a reset button that resets
+      all form values to their default values:
+    </p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+    </form>
+
+    <p>
+      If you change the input values and then click the "Reset" button, the
+      form-data will be reset to the default values.
+    </p>
+
+    <h3>Input Type Radio</h3>
+    <pre>
+        input type="radio" defines a radio button.
+
+        Radio buttons let a user select ONLY ONE of a limited number of choices
+    </pre>
+    <h2>Radio Buttons</h2>
+
+    <p>The <strong>input type="radio"</strong> defines a radio button:</p>
+
+    <p>Choose your favorite Web language:</p>
+    <form action="/action_page.php">
+        <input type="radio" id="html" name="fav_language" value="HTML" />  
+      <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />  
+      <label for="css">CSS</label><br />
+       
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+        <label for="javascript">JavaScript</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Input Type Checkbox</h2>
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+    <form action="/action_page.php">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
