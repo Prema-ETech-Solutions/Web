@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script>
+      var request = new XMLHttpRequest();
+      var urlHere ="https://api.thingspeak.com/channels/1733189/feeds.json?api_key=1IB99NKVQKZ8P374&results=300";
+      console.log(urlHere);
+      request.open("GET", urlHere, true);
+
+      request.onload = function () {
+        var data = JSON.parse(request.responseText);
+        console.log(data);
+      };
+
+      request.send();
+    </script>
+  </head>
+  <body>
+    <div
+      width="100%"
+      id="camb"
+      style="
+        font-size: 15px;
+        text-align: left;
+        color: white;
+        margin-left: -300px;
+        background-color: red;
+        border-left: 300px solid red;
+        border-bottom: 5px solid red;
+        border-top: 300px solid red;
+        overflow: hidden;
+        margin-top: -300px;
+        font-family: Brandon, Grotesque, sans-serif;
+      "
+    ></div>
+  </body>
+</html>
