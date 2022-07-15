@@ -1,0 +1,14 @@
+*
+{
+    padding: 0%;
+    margin: 0;
+}
+#Heading
+{
+    padding: 20px;
+    border: 1px;
+    border-color: rgb(39, 238, 172);
+    text-align: center;
+    background-color: rgb(49, 76, 85);
+
+}

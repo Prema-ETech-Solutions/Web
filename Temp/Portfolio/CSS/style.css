@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+}
+nav {
+  scroll-behavior: smooth;
+  background-color: #00283a;
+  height: 80px;
+  border-radius: 10px;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  box-shadow: 0 2px 4px 0rgba (0, 0, 0, 0.6);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: fixed;
+  position: fixed;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  background-color: #00283a;
+  /* width: 100%; */
+  height: 80px;
+}
+
+label.LOGO {
+  align-items: center;
+  color: #70ba65;
+  font-size: 22px;
+  line-height: 80px;
+  padding: 0 80px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 250px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 20px;
+}
+nav ul li a {
+  color: #dedee0;
+  font-size: 15px;
+  padding: 0px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  line-height: 80px;
+  width: 100%;
+
+}
+
+.Download_Btn {
+  background-color: #56985a;
+  border: solid 2px #70ba65;
+  color: #fcfcfe;
+  font-size: 11px;
+  padding: 0px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  line-height: 30px;
+  /* width: 100%; */
+
+}
