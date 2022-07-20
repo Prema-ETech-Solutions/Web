@@ -8,68 +8,71 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
+  background-color: #02162b;
 }
-nav {
-  scroll-behavior: smooth;
-  background-color: #00283a;
-  height: 80px;
-  border-radius: 10px;
-  z-index: 10;
-  right: 0;
-  left: 0;
-  box-shadow: 0 2px 4px 0rgba (0, 0, 0, 0.6);
+#fst_nav {
+  /* position: fixed; */
+  background-color: #002638;
   margin-top: 10px;
-  margin-left: 10px;
   margin-right: 10px;
-  position: fixed;
-  position: fixed;
-  left: 0;
-  right: 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
-  z-index: 9;
-  background-color: #00283a;
-  /* width: 100%; */
+  margin-left: 10px;
   height: 80px;
-}
-
-label.LOGO {
+  /* border: 2px solid; */
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 9;
+  padding: 2px 1px 1px 134px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 60%);
+  justify-content: center;
   align-items: center;
-  color: #70ba65;
-  font-size: 22px;
-  line-height: 80px;
-  padding: 0 80px;
-  font-weight: bold;
 }
-nav ul {
-  float: right;
-  margin-right: 250px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 90px;
-  margin: 0 20px;
-}
-nav ul li a {
+#Logo_nav {
+  line-height: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  font-weight: 900;
+  font-size: 30px;
   color: #dedee0;
-  font-size: 15px;
-  padding: 0px 10px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  line-height: 80px;
-  width: 100%;
-
 }
 
-.Download_Btn {
-  background-color: #56985a;
-  border: solid 2px #70ba65;
-  color: #fcfcfe;
-  font-size: 11px;
-  padding: 0px 20px;
-  border-radius: 30px;
-  text-transform: uppercase;
-  line-height: 30px;
-  /* width: 100%; */
+#nav_ul_fst {
+  display: inline;
+  margin-left: 100px;
+}
 
+.list_nav {
+  margin: 0px 0px 0px 10px;
+  display: inline-block;
+  /* line-height: 70px; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  font-weight: 700;
+  margin: 0px 18px 0px 20px;
+  padding: 0px 18px 0px 18px;
+  /* color: #dedee0; */
+}
+li a {
+  color: #dedee0;
+  font-size: 13px;
+}
+#Download_Btn 
+{
+  margin: 0px 10px 0px 20px;
+  width: 125px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: rgb(112, 186, 101);
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 1px 1px 1px;
 }
