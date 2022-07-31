@@ -10,69 +10,56 @@ body {
     "Arial Narrow", Arial, sans-serif;
   background-color: #02162b;
 }
-#fst_nav {
-  /* position: fixed; */
-  background-color: #002638;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+.fst_nav {
+  position: sticky;
+  top: 5px;
+  background-color: #00283a;
   height: 80px;
-  /* border: 2px solid; */
-  padding: 10px;
   border-radius: 10px;
+  margin: 10px 5px 0px 5px;
   z-index: 9;
-  padding: 2px 1px 1px 134px;
+  padding: 0px 150px 0px 150px;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 60%);
   justify-content: center;
   align-items: center;
-}
-#Logo_nav {
-  line-height: 70px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  font-weight: 900;
-  font-size: 30px;
-  color: #dedee0;
-}
-
-#nav_ul_fst {
-  display: inline;
-  margin-left: 100px;
-}
-
-.list_nav {
-  margin: 0px 0px 0px 10px;
-  display: inline-block;
-  /* line-height: 70px; */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  font-weight: 700;
-  margin: 0px 18px 0px 20px;
-  padding: 0px 18px 0px 18px;
-  /* color: #dedee0; */
-}
-li a {
-  color: #dedee0;
-  font-size: 13px;
-}
-#Download_Btn 
-{
-  margin: 0px 10px 0px 20px;
-  width: 125px;
-  height: 35px;
-  border: none;
-  outline: none;
-  background: rgb(112, 186, 101);
-  color: #ffffff;
-  font-size: 13px;
-  border-radius: 40px;
-  text-align: center;
-  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
-  position: relative;
   overflow: hidden;
-  cursor: pointer;
-  font-weight: 700;
-  justify-content: center;
-  align-items: center;
-  padding: 1px 1px 1px 1px;
+}
+.fst_nav div {
+  display: inline-block;
+}
+.fst_nav div .Logo_nav {
+  position: relative;
+  top: 25px;
+  display: inline-block;
+  color: #dedee0;
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0px 100px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.list_nav {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  margin: 0px 25px 0px 25px;
+  padding: 0px 0px 0px 0px;
+}
+.list_nav a {
+  color: #dedee0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.Download_Btn {
+  width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  color: #ffffff;
+  background-color: #70b965;
+  font-size: 13px;
+  font-weight: 900;
+  border: none;
+  margin: 0px 0px 0px 100px;
+  padding: 0px 0px 0px 0px;
 }
