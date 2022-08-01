@@ -16,50 +16,65 @@ body {
   background-color: #00283a;
   height: 80px;
   border-radius: 10px;
-  margin: 10px 5px 0px 5px;
+  margin: 10px 10px 0px 10px;
   z-index: 9;
-  padding: 0px 150px 0px 150px;
+  padding: 0px 20% 0px 20%;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 60%);
-  justify-content: center;
-  align-items: center;
+  display: flex;
   overflow: hidden;
 }
-.fst_nav div {
-  display: inline-block;
+#Logo-Cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 125px 0px 0px;
 }
-.fst_nav div .Logo_nav {
-  position: relative;
-  top: 25px;
-  display: inline-block;
-  color: #dedee0;
+.Logo_nav {
+  color: rgb(222, 222, 224);
   font-size: 22px;
+  font-style: normal;
   font-weight: 900;
-  margin: 0px 100px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  justify-content: center;
+  align-items: center;
+}
+#Links-Cont {
+  display: flex;
+  align-items: center;
+  /* justify-content: ; */
+  margin: 0px 0px 0px 0px;
 }
 .list_nav {
-  position: relative;
-  top: 20px;
-  display: inline-block;
+  display: inline-flex;
+  justify-items: center;
+  margin: 0px 30px 0px 30px;
+  /* width: 0%; */
+}
+ul .links_ {
+  color: rgb(222, 222, 224);
   font-size: 11px;
   font-weight: 900;
-  margin: 0px 25px 0px 25px;
-  padding: 0px 0px 0px 0px;
 }
-.list_nav a {
-  color: #dedee0;
+#Links-Cont .mar
+{
+  margin: 0px 0px 0px 125px;
+
+}
+.Download_Btn
+{
+  white-space: nowrap;
+  background-color: #70ba65;
+  height: 45px;
+  border: solid 2px #70ba65;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  display: inline-flex;
+  padding: 0 35px;
+  justify-content: center;
+  align-items: center;
   margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-}
-.Download_Btn {
-  width: 180px;
-  height: 40px;
-  border-radius: 40px;
-  color: #ffffff;
-  background-color: #70b965;
-  font-size: 13px;
-  font-weight: 900;
-  border: none;
-  margin: 0px 0px 0px 100px;
-  padding: 0px 0px 0px 0px;
+  transition: .4s ease-in-out;
 }
