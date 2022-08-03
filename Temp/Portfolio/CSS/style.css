@@ -7,32 +7,37 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
-  "Arial Narrow", Arial, sans-serif;
+    "Arial Narrow", Arial, sans-serif;
   background-color: #02162b;
 }
-#header
-{
-  padding: 0px 1% 0px 1%;
+#header {
+  position: sticky;
+  /* border: #bd57af solid 1px; */
+  height: fit-content;
+  padding: 0% 1% 1% 1%;
+  /* margin: 1% 0px 0px 0px; */
 }
 #nav {
   background-color: #00283a;
+  padding: 0% 5% 0% 5%;
   height: 80px;
   width: 100%;
   border-radius: 15px;
   margin: 10px auto 0px auto;
   z-index: 9;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 80%);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-#nav div
+#Left-logo
 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0px 3%  0px  3% ;
+
 }
 .Logo
 {
@@ -40,14 +45,23 @@ body {
   color: #dedee0;
   font-size: 22px;
   font-weight: 900;
+  
 }
-#nav div ul
+#center-logo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 3%  0px  3% ;
+}
+#center-logo ul
 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#nav div ul li a
+
+#center-logo ul li a
 {
   text-decoration: none;
   color: #dedee0;
@@ -61,6 +75,14 @@ body {
   letter-spacing: 2px;
   padding: 0px 20px;
 }
+#right-logo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 3%  0px  3% ;
+}
+
 #Download-btn
 {
   margin: 0px 0px 1% 0px;
@@ -79,5 +101,5 @@ body {
   padding: 0 20px;
   justify-content: center;
   align-items: center;
-
 }
+
