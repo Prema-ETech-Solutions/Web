@@ -12,12 +12,16 @@ body {
 }
 #header {
   position: sticky;
-  /* border: #bd57af solid 1px; */
+  top: 1px;
+  scroll-behavior: smooth;
+  z-index: 9;
   height: fit-content;
-  padding: 0% 1% 1% 1%;
+  padding: 0% 1% 0px 1%;
   /* margin: 1% 0px 0px 0px; */
 }
-#nav {
+.nav {
+  /* position: sticky; */
+  /* z-index: 8; */
   background-color: #00283a;
   padding: 0% 5% 0% 5%;
   height: 80px;
@@ -31,38 +35,47 @@ body {
   align-items: center;
   overflow: hidden;
 }
-#Left-logo
-{
+#Left-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 3%  0px  3% ;
-
+  margin: 0px 3% 0px 3%;
 }
-.Logo
-{
+.Logo {
   position: relative;
   color: #dedee0;
   font-size: 22px;
   font-weight: 900;
-  
+  cursor: pointer;
 }
-#center-logo
+.Logo::after
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 3%  0px  3% ;
+  content: "";
+  position:absolute;
+  background-color: #70ba65;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  top: 115%;
+  transition: 0.9s;
 }
-#center-logo ul
+.Logo:hover::after
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
-#center-logo ul li a
-{
+#center-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 3% 0px 3%;
+}
+#center-logo ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#center-logo ul li a {
   text-decoration: none;
   color: #dedee0;
   white-space: nowrap;
@@ -74,17 +87,48 @@ body {
   width: 100%;
   letter-spacing: 2px;
   padding: 0px 20px;
+  position: relative;
+
 }
-#right-logo
+#center-logo ul li a::after
 {
+  content: "";
+  position:absolute;
+  background-color: #70ba65;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  bottom: 350%;
+  transition: 0.9s;
+}
+#center-logo ul li a::before
+{
+  content: "";
+  position:absolute;
+  background-color: #70ba65;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  top: 350%;
+  transition: 0.9s;
+
+}
+#center-logo ul li a:hover
+{
+  color: #70ba65;
+}
+#center-logo ul li a:hover::after ,#center-logo ul li a:hover::before 
+{
+  width: 100%;
+}
+#right-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 3%  0px  3% ;
+  margin: 0px 3% 0px 3%;
 }
 
-#Download-btn
-{
+#Download-btn {
   margin: 0px 0px 1% 0px;
   white-space: nowrap;
   background-color: #70ba65;
@@ -101,5 +145,22 @@ body {
   padding: 0 20px;
   justify-content: center;
   align-items: center;
+  /* transition: 1s; */
+}
+#Download-btn:hover
+{
+  transition: 2s ease-in-out;
+  border-radius: 0px;
+  color:#70ba65;
+  background-color: transparent;
+}
+
+.tp {
+  border: 1px solid ghostwhite;
+  height: 100%;
+  /* margin-top: 34px; */
+}
+#Mobile-foot {
+  display: none;
 }
 
