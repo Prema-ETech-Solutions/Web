@@ -8,7 +8,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
-  background-color: #02162b;
+  background-color: #00283a;
 }
 /* Header Outer */
 #header {
@@ -27,15 +27,18 @@ body {
 .nav {
   /* position: sticky; */
   /* z-index: 8; */
-  background-color: #00283a;
+  background: rgba(255, 255, 255, 0.1);
   padding: 0% 5% 0% 5%;
   height: 80px;
   width: 100%;
   border-radius: 15px;
   margin: 10px auto 0px auto;
   z-index: 9;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 80%);
+  box-shadow:  15px 15px 25px 15px rgb(0 ,0, 0 , 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
   display: inline-flex;
+  backdrop-filter: blur(2px);
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -105,99 +108,43 @@ body {
   position: relative;
   
 }
-#center-logo ul li a::after
+#center-logo ul li ::before
 {
   content: "";
+  /* border: #70ba65 1px solid; */
   position:absolute;
   background-color: #70ba65;
   height: 3px;
-  width: 0%;
+  width: 00%;
   left: 0%;
-  bottom: 350%;
-  transition: 0.9s;
-}
-#center-logo ul li a::before
-{
-  content: "";
-  position:absolute;
-  background-color: #70ba65;
-  height: 3px;
-  width: 0%;
-  left: 0%;
-  top: 350%;
+  top: 320%;
   transition: 0.9s;
   
 }
-#center-logo ul li a:hover
+#center-logo ul li ::after
+{
+  content: "";
+  position:absolute;
+  background-color: #70ba65;
+  height: 3px;
+  width: 00%;
+  left: 0%;
+  bottom: 320%;
+  transition: 0.9s;
+  
+}
+#center-logo ul li:hover a
 {
   color: #70ba65;
+  font-weight: 900;
 }
-#center-logo ul li a:hover::after ,#center-logo ul li a:hover::before 
+#center-logo ul li :hover::before ,#center-logo ul li :hover::after  
 {
   width: 100%;
+  /* top: 320%; */
 }
 
 /* Links in nav  End */
-
-
-
-/* Nav Button */
-
-#right-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px 3% 0px 3%;
-}
-
-#Download-btn {
-  
-  margin: 0px 0px 1% 0px;
-  white-space: nowrap;
-  background-color: #70ba65;
-  height: 40px;
-  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 80%);
-  border: solid 2px #70ba65;
-  color: #fcfcfe;
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border-radius: 30px;
-  display: flex;
-  padding: 0 20px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: 2s;
-}
-
-#Download-btn::after
-{
-  content: "";
-  background-color: #70ba65;
-  position: absolute;
-  height: 3px;
-  width: 0%;
-  left: 0%;
-  top: 110%;
-  transition: 2s;
-}
-#Download-btn:hover
-{
-  transition: 2s ease-in-out;
-  border-radius: 0px;
-  color:#70ba65;
-  background-color: transparent;
-}
-#Download-btn:hover::after
-{
-  width:100%;
-}
-
-
-
-/* Nav Button End  */
 
 
 
@@ -205,8 +152,5 @@ body {
   border: 1px solid ghostwhite;
   height: 100%;
   /* margin-top: 34px; */
-}
-#Mobile-foot {
-  display: none;
 }
 
