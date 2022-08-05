@@ -8,7 +8,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
-  background-color: #00283a;
+  background-color: #f8f8f8;
 }
 /* Header Outer */
 #header {
@@ -27,7 +27,7 @@ body {
 .nav {
   /* position: sticky; */
   /* z-index: 8; */
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffffff1a;
   padding: 0% 5% 0% 5%;
   height: 80px;
   width: 100%;
@@ -57,7 +57,7 @@ body {
 }
 .Logo {
   position: relative;
-  color: #dedee0;
+  color: #101011;
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
@@ -71,7 +71,7 @@ body {
   width: 0%;
   left: 0%;
   top: 115%;
-  transition: 0.9s;
+  transition: 3s;
 }
 .Logo:hover::after
 {
@@ -95,7 +95,7 @@ body {
 }
 #center-logo ul li a {
   text-decoration: none;
-  color: #dedee0;
+  color: #101011;
   white-space: nowrap;
   font-size: 11px;
   font-weight: 700;
@@ -111,37 +111,28 @@ body {
 #center-logo ul li ::before
 {
   content: "";
-  /* border: #70ba65 1px solid; */
   position:absolute;
-  background-color: #70ba65;
-  height: 3px;
-  width: 00%;
+  height: 100%;
+  width: 100%;
   left: 0%;
-  top: 320%;
+  top: 0%;
+  border-bottom: #70ba65 1px solid ;
+  border-top: #70ba65 1px solid ;
+  transform: scaleY(5);
+  opacity: 0;
   transition: 0.9s;
   
 }
-#center-logo ul li ::after
-{
-  content: "";
-  position:absolute;
-  background-color: #70ba65;
-  height: 3px;
-  width: 00%;
-  left: 0%;
-  bottom: 320%;
-  transition: 0.9s;
-  
-}
+
 #center-logo ul li:hover a
 {
   color: #70ba65;
   font-weight: 900;
 }
-#center-logo ul li :hover::before ,#center-logo ul li :hover::after  
+#center-logo ul li :hover::before   
 {
-  width: 100%;
-  /* top: 320%; */
+  transform: scaleY(1);
+  opacity: 1;
 }
 
 /* Links in nav  End */
@@ -149,7 +140,7 @@ body {
 
 
 .tp {
-  border: 1px solid ghostwhite;
+  border: 1px solid rgb(32, 32, 71);
   height: 100%;
   /* margin-top: 34px; */
 }
