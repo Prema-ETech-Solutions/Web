@@ -7,9 +7,44 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
-    "Arial Narrow", Arial, sans-serif;
+  "Arial Narrow", Arial, sans-serif;
   background-color: #f8f8f8;
 }
+
+
+
+
+
+*::selection {
+  background: #70ba65;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: #51744c;
+}
+html::-webkit-scrollbar-thumb {
+  background: #70ba65;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Header Outer */
 #header {
   position: sticky;
@@ -61,6 +96,7 @@ body {
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
+  transition: 2s;
 }
 .Logo::after
 {
@@ -73,13 +109,17 @@ body {
   top: 115%;
   transition: 3s;
 }
+.Logo:hover
+{
+  color: #70ba65;
+
+}
 .Logo:hover::after
 {
   width: 100%;
+
 }
 /* Nav Inner LOGO End  */
-
-
 
 /* Links in nav  */
 #center-logo {
@@ -137,11 +177,8 @@ body {
 
 /* Links in nav  End */
 
-
-
-.tp {
-  border: 1px solid rgb(32, 32, 71);
-  height: 100%;
-  /* margin-top: 34px; */
+#particles-js
+{
+  height: 90vh;
+  margin: 1px 0px 0px 0px;
 }
-
