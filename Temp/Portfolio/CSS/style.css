@@ -80,22 +80,7 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
   transition: 3s all linear;
 }
-.Logo::after {
-  content: "";
-  position: absolute;
-  background-color: #70ba65;
-  height: 3px;
-  width: 0%;
-  left: 0%;
-  top: 115%;
-  transition: 3s;
-}
-.Logo:hover {
-  color: #70ba65;
-}
-.Logo:hover::after {
-  width: 100%;
-}
+
 /* Nav Inner LOGO End  */
 
 /* Links in nav  */
@@ -124,28 +109,6 @@ html::-webkit-scrollbar-thumb {
   padding: 0px 20px;
   position: relative;
   transition: all 2s linear;
-}
-#center-logo ul li ::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0%;
-  top: 0%;
-  border-bottom: #70ba65 1px solid;
-  border-top: #70ba65 1px solid;
-  transform: scaleY(5);
-  opacity: 0;
-  transition: 0.9s;
-}
-
-#center-logo ul li:hover a {
-  color: #70ba65;
-  font-weight: 900;
-}
-#center-logo ul li :hover::before {
-  transform: scaleY(1);
-  opacity: 1;
 }
 
 /* Links in nav  End */
@@ -178,19 +141,74 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 }
-.cont div {
-  /* display: flex; */
-  border: #45aad1 3px solid;
-  height: 35%;
-  /* align-items: center; */
-  /* justify-items: center; */
+.cont #home-left {
+  display: block;
+  /* border: #45aad1 3px solid; */
+  height: 50%;
 }
-.cont div h1 {
-  font-size: 550%;
+.cont #home-left h1 {
+  font-size: 500%;
+  font-weight: 800;
   color: #70ba65;
 }
 
+.cont #home-left label {
+  font-size: 250%;
+  font-weight: 700;
+  color: #000000;
+}
+.div-adjust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+#about-btn {
+  margin: 5.7% 0%;
+  white-space: nowrap;
+  background-color: #70ba65;
+  box-shadow: 0 7px 44px 0 rgb(0 0 0 / 70%);
+  border: solid 2px #70ba65;
+  color: #fcfcfe;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  display: flex;
+  padding: 3% 13%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 2s;
+}
+
+.social-adjust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-adjust .icon {
+  margin: 2% 1%;
+  white-space: nowrap;
+  /* background-color: #70ba65; */
+  box-shadow: 0 7px 44px 0 rgb(0 0 0 / 70%);
+  /* border: solid 2px #70ba65; */
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 0%;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 2s;
+}
 
 #Img-home-1 {
   height: 100%;

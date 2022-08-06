@@ -1,326 +1,413 @@
+/* Nav Bar Logo hover Animation Start */
+.Logo::after {
+  content: "";
+  position: absolute;
+  background-color: #70ba65;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  top: 115%;
+  transition: 3s;
+}
+.Logo:hover {
+  color: #70ba65;
+}
+.Logo:hover::after {
+  width: 100%;
+}
+/* Nav Bar Logo hover Animation  End*/
+
+/* Nav Bar pages Links Animation Start */
+#center-logo ul li ::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  border-bottom: #70ba65 1px solid;
+  border-top: #70ba65 1px solid;
+  transform: scaleY(5);
+  opacity: 0;
+  transition: 0.9s;
+}
+
+#center-logo ul li:hover a {
+  color: #70ba65;
+  font-weight: 900;
+}
+#center-logo ul li :hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+/* Nav Bar pages Links Animation End */
+
+/* Home Page Color changing Animation Start */
 .cont div h1 span {
-    animation: color-change 30s linear infinite;
-    /* font-size: 450%; */
-    /* color: #70ba65; */
+  animation: color-change 30s linear infinite;
+  /* font-size: 450%; */
+  /* color: #70ba65; */
+}
+@keyframes color-change {
+  0% {
+    color: #ffffff;
   }
-  @keyframes color-change {
-    0% {
-      color: #ffffff;
-    }
-    1% {
-      color: #f1faf0;
-    }
-    2% {
-      color: #e4f4e1;
-    }
-    3% {
-      color: #d6efd2;
-    }
-    4% {
-      color: #c8e9c3;
-    }
-    5% {
-      color: #bbe4b5;
-    }
-    6% {
-      color: #addfa6;
-    }
-    7% {
-      color: #9fd997;
-    }
-    8% {
-      color: #91d488;
-    }
-    9% {
-      color: #84ce79;
-    }
-    10% {
-      color: #76c96a;
-    }
-  
-    11% {
-      color: #76c96a;
-    }
-    12% {
-      color: #6ab55f;
-    }
-    13% {
-      color: #5ea155;
-    }
-    14% {
-      color: #538d4a;
-    }
-    15% {
-      color: #477940;
-    }
-    16% {
-      color: #3b6535;
-    }
-    17% {
-      color: #2f502a;
-    }
-    18% {
-      color: #233c20;
-    }
-    19% {
-      color: #182815;
-    }
-    20% {
-      color: #0c140b;
-    }
-  
-    21% {
-      color: #0c140b;
-    }
-    22% {
-      color: #182815;
-    }
-    23% {
-      color: #233c20;
-    }
-    24% {
-      color: #2f502a;
-    }
-    25% {
-      color: #3b6535;
-    }
-    26% {
-      color: #477940;
-    }
-    27% {
-      color: #538d4a;
-    }
-    28% {
-      color: #5ea155;
-    }
-    29% {
-      color: #6ab55f;
-    }
-    30% {
-      color: #76c96a;
-    }
-  
-    31% {
-      color: #84ce79;
-    }
-    32% {
-      color: #91d488;
-    }
-    33% {
-      color: #9fd997;
-    }
-    34% {
-      color: #addfa6;
-    }
-    35% {
-      color: #bbe4b5;
-    }
-    36% {
-      color: #c8e9c3;
-    }
-    37% {
-      color: #d6efd2;
-    }
-    38% {
-      color: #e4f4e1;
-    }
-    39% {
-      color: #f1faf0;
-    }
-    40% {
-      color: #ffffff;
-    }
-  
-    41% {
-      color: #f1faf0;
-    }
-    42% {
-      color: #e4f4e1;
-    }
-    43% {
-      color: #d6efd2;
-    }
-    44% {
-      color: #c8e9c3;
-    }
-    45% {
-      color: #bbe4b5;
-    }
-    46% {
-      color: #addfa6;
-    }
-    47% {
-      color: #9fd997;
-    }
-    48% {
-      color: #91d488;
-    }
-    49% {
-      color: #84ce79;
-    }
-    50% {
-      color: #76c96a;
-    }
-  
-  
-    51% {
-      color: #6ab55f;
-    }
-    52% {
-      color: #5ea155;
-    }
-    53% {
-      color: #538d4a;
-    }
-    54% {
-      color: #477940;
-    }
-    55% {
-      color: #3b6535;
-    }
-    56% {
-      color: #2f502a;
-    }
-    57% {
-      color: #233c20;
-    }
-    58% {
-      color: #182815;
-    }
-    59% {
-      color: #0c140b;
-    }
-    60%
-    {
-      color: #000000;
-    }
-  
-  
-  
-    61% {
-      color: #0c140b;
-    }
-    62% {
-      color: #182815;
-    }
-    63% {
-      color: #233c20;
-    }
-    64% {
-      color: #2f502a;
-    }
-    65% {
-      color: #3b6535;
-    }
-    66% {
-      color: #477940;
-    }
-    67% {
-      color: #538d4a;
-    }
-    68% {
-      color: #5ea155;
-    }
-    69% {
-      color: #6ab55f;
-    }
-    70% {
-      color: #76c96a;
-    }
-  
-  
-    71% {
-      color: #84ce79;
-    }
-    72% {
-      color: #91d488;
-    }
-    73% {
-      color: #9fd997;
-    }
-    74% {
-      color: #addfa6;
-    }
-    75% {
-      color: #bbe4b5;
-    }
-    76% {
-      color: #c8e9c3;
-    }
-    77% {
-      color: #d6efd2;
-    }
-    78% {
-      color: #e4f4e1;
-    }
-    79% {
-      color: #f1faf0;
-    }
-    80% {
-      color: #ffffff;
-    }
-  
-  
-    81% {
-      color: #ffffff;
-    }
-    82% {
-      color: #f1faf0;
-    }
-    83% {
-      color: #e4f4e1;
-    }
-    84% {
-      color: #d6efd2;
-    }
-    85% {
-      color: #c8e9c3;
-    }
-    86% {
-      color: #bbe4b5;
-    }
-    87% {
-      color: #addfa6;
-    }
-    88% {
-      color: #9fd997;
-    }
-    89% {
-      color: #91d488;
-    }
-    90% {
-      color: #84ce79;
-    }
-  
-    91% {
-      color: #76c96a;
-    }
-  
-    92% {
-      color: #84ce79;
-    }
-    93% {
-      color: #91d488;
-    }
-    94% {
-      color: #9fd997;
-    }
-    95% {
-      color: #addfa6;
-    }
-    96% {
-      color: #bbe4b5;
-    }
-    97% {
-      color: #c8e9c3;
-    }
-    98% {
-      color: #d6efd2;
-    }
-    99% {
-      color: #e4f4e1;
-    }
-    100% {
-      color: #f1faf0;
-    }
+  1% {
+    color: #f1faf0;
   }
+  2% {
+    color: #e4f4e1;
+  }
+  3% {
+    color: #d6efd2;
+  }
+  4% {
+    color: #c8e9c3;
+  }
+  5% {
+    color: #bbe4b5;
+  }
+  6% {
+    color: #addfa6;
+  }
+  7% {
+    color: #9fd997;
+  }
+  8% {
+    color: #91d488;
+  }
+  9% {
+    color: #84ce79;
+  }
+  10% {
+    color: #76c96a;
+  }
+
+  11% {
+    color: #76c96a;
+  }
+  12% {
+    color: #6ab55f;
+  }
+  13% {
+    color: #5ea155;
+  }
+  14% {
+    color: #538d4a;
+  }
+  15% {
+    color: #477940;
+  }
+  16% {
+    color: #3b6535;
+  }
+  17% {
+    color: #2f502a;
+  }
+  18% {
+    color: #233c20;
+  }
+  19% {
+    color: #182815;
+  }
+  20% {
+    color: #0c140b;
+  }
+
+  21% {
+    color: #0c140b;
+  }
+  22% {
+    color: #182815;
+  }
+  23% {
+    color: #233c20;
+  }
+  24% {
+    color: #2f502a;
+  }
+  25% {
+    color: #3b6535;
+  }
+  26% {
+    color: #477940;
+  }
+  27% {
+    color: #538d4a;
+  }
+  28% {
+    color: #5ea155;
+  }
+  29% {
+    color: #6ab55f;
+  }
+  30% {
+    color: #76c96a;
+  }
+
+  31% {
+    color: #84ce79;
+  }
+  32% {
+    color: #91d488;
+  }
+  33% {
+    color: #9fd997;
+  }
+  34% {
+    color: #addfa6;
+  }
+  35% {
+    color: #bbe4b5;
+  }
+  36% {
+    color: #c8e9c3;
+  }
+  37% {
+    color: #d6efd2;
+  }
+  38% {
+    color: #e4f4e1;
+  }
+  39% {
+    color: #f1faf0;
+  }
+  40% {
+    color: #ffffff;
+  }
+
+  41% {
+    color: #f1faf0;
+  }
+  42% {
+    color: #e4f4e1;
+  }
+  43% {
+    color: #d6efd2;
+  }
+  44% {
+    color: #c8e9c3;
+  }
+  45% {
+    color: #bbe4b5;
+  }
+  46% {
+    color: #addfa6;
+  }
+  47% {
+    color: #9fd997;
+  }
+  48% {
+    color: #91d488;
+  }
+  49% {
+    color: #84ce79;
+  }
+  50% {
+    color: #76c96a;
+  }
+
+  51% {
+    color: #6ab55f;
+  }
+  52% {
+    color: #5ea155;
+  }
+  53% {
+    color: #538d4a;
+  }
+  54% {
+    color: #477940;
+  }
+  55% {
+    color: #3b6535;
+  }
+  56% {
+    color: #2f502a;
+  }
+  57% {
+    color: #233c20;
+  }
+  58% {
+    color: #182815;
+  }
+  59% {
+    color: #0c140b;
+  }
+  60% {
+    color: #000000;
+  }
+
+  61% {
+    color: #0c140b;
+  }
+  62% {
+    color: #182815;
+  }
+  63% {
+    color: #233c20;
+  }
+  64% {
+    color: #2f502a;
+  }
+  65% {
+    color: #3b6535;
+  }
+  66% {
+    color: #477940;
+  }
+  67% {
+    color: #538d4a;
+  }
+  68% {
+    color: #5ea155;
+  }
+  69% {
+    color: #6ab55f;
+  }
+  70% {
+    color: #76c96a;
+  }
+
+  71% {
+    color: #84ce79;
+  }
+  72% {
+    color: #91d488;
+  }
+  73% {
+    color: #9fd997;
+  }
+  74% {
+    color: #addfa6;
+  }
+  75% {
+    color: #bbe4b5;
+  }
+  76% {
+    color: #c8e9c3;
+  }
+  77% {
+    color: #d6efd2;
+  }
+  78% {
+    color: #e4f4e1;
+  }
+  79% {
+    color: #f1faf0;
+  }
+  80% {
+    color: #ffffff;
+  }
+
+  81% {
+    color: #ffffff;
+  }
+  82% {
+    color: #f1faf0;
+  }
+  83% {
+    color: #e4f4e1;
+  }
+  84% {
+    color: #d6efd2;
+  }
+  85% {
+    color: #c8e9c3;
+  }
+  86% {
+    color: #bbe4b5;
+  }
+  87% {
+    color: #addfa6;
+  }
+  88% {
+    color: #9fd997;
+  }
+  89% {
+    color: #91d488;
+  }
+  90% {
+    color: #84ce79;
+  }
+
+  91% {
+    color: #76c96a;
+  }
+
+  92% {
+    color: #84ce79;
+  }
+  93% {
+    color: #91d488;
+  }
+  94% {
+    color: #9fd997;
+  }
+  95% {
+    color: #addfa6;
+  }
+  96% {
+    color: #bbe4b5;
+  }
+  97% {
+    color: #c8e9c3;
+  }
+  98% {
+    color: #d6efd2;
+  }
+  99% {
+    color: #e4f4e1;
+  }
+  100% {
+    color: #f1faf0;
+  }
+}
+/* Home Page Color changing Animation End */
+
+/* About ME  Btn Home Page Start*/
+#about-btn::after
+{
+  content: "";
+  background-color: #70ba65;
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  top: 125%;
+  transition: 5ss;
+}
+#about-btn:hover
+{
+  transition: 2s ease-in-out;
+  border-radius: 0px;
+  color:#70ba65;
+  background-color: transparent;
+}
+#about-btn:hover::after
+{
+  width:100%;
+}
+/* About ME  Btn Home Page End*/
+
+/* Home Social Animation Start */
+
+.social-adjust a
+{
+  position: relative;
+}
+.social-adjust a::after {
+  content: "";
+  position: absolute;
+  background-color: #70ba65;
+  height: 5px;
+  width: 0%;
+  left: 0%;
+  top: 90%;
+  transition: 5s;
+}
+.social-adjust a:hover::after
+{
+  width: 100%;
+}
+/* Home Social Animation End */
