@@ -22,13 +22,19 @@ html {
   scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 1rem;
 }
 html::-webkit-scrollbar-track {
-  background: #51744c;
+  background: #67814e;
+  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 html::-webkit-scrollbar-thumb {
-  background: #70ba65;
+  background: #68aa68;
+  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Header Outer */
@@ -127,32 +133,34 @@ html::-webkit-scrollbar-thumb {
   right: 0%;
   left: 0%;
 }
-#s1 {
+#s1 ,#s2 ,#s3,#s4 {
   height: 100%;
   width: 100%;
-  border: #101011 3px solid;
+  /* border: #101011 3px solid; */
   display: flex;
 }
-.cont {
-  border: #1818b4 3px solid;
+.cont-1 {
+  /* border: #1818b4 3px solid; */
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.cont #home-left {
+.cont-1 #home-left-1 {
   display: block;
   /* border: #45aad1 3px solid; */
+  backdrop-filter: blur(2px);
   height: 50%;
+  position: relative;
 }
-.cont #home-left h1 {
-  font-size: 500%;
+.cont-1 #home-left-1 h1 {
+  font-size: 450%;
   font-weight: 800;
   color: #70ba65;
 }
 
-.cont #home-left label {
+.cont-1 #home-left-1 label {
   font-size: 250%;
   font-weight: 700;
   color: #000000;
@@ -213,5 +221,29 @@ html::-webkit-scrollbar-thumb {
 #Img-home-1 {
   height: 100%;
   width: 50%;
-  border: #b43c18 3px solid;
+  /* border: #b43c18 3px solid; */
+  align-items: center;
+  display: flex;
+  
+  justify-content: center;
+}
+.home-right-1
+{
+  overflow: hidden;
+  /* border: 3px solid sandybrown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: #45aad1 3px solid; */
+  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  height: 60%;
+  /* width: 50%; */
+  border-radius: 50%;
+}
+.home-right-1 img
+{
+  padding: 3% 0% 0% 0% ;
 }

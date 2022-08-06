@@ -1,6 +1,6 @@
 // Auto typing Animation Start
 var typed = new Typed(".auto-typing", {
-    strings: ["HTML/CSS", "Javascript", "Python","Java", "C","Arduino","C++","VB"],
+    strings: ["HTML/CSS", "Javascript", "Python","Java", "C","Arduino","C++","Visual Basic .NET"],
     loop: true,
     typeSpeed: 90,
     backSpeed: 90,
