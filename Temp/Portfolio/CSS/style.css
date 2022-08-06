@@ -7,13 +7,9 @@
 }
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Franklin Gothic Medium",
-  "Arial Narrow", Arial, sans-serif;
+    "Arial Narrow", Arial, sans-serif;
   background-color: #f8f8f8;
 }
-
-
-
-
 
 *::selection {
   background: #70ba65;
@@ -35,16 +31,6 @@ html::-webkit-scrollbar-thumb {
   background: #70ba65;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Header Outer */
 #header {
   position: sticky;
@@ -57,19 +43,18 @@ html::-webkit-scrollbar-thumb {
 }
 /* Header Outer End */
 
-
 /* Header inner nav  */
 .nav {
   /* position: sticky; */
   /* z-index: 8; */
-  background: #ffffff1a;
+  /* background: #ffffff1a; */
   padding: 0% 5% 0% 5%;
   height: 80px;
   width: 100%;
   border-radius: 15px;
   margin: 10px auto 0px auto;
   z-index: 9;
-  box-shadow:  15px 15px 25px 15px rgb(0 ,0, 0 , 0.5);
+  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   display: inline-flex;
@@ -79,9 +64,6 @@ html::-webkit-scrollbar-thumb {
   overflow: hidden;
 }
 /* Header inner nav end */
-
-
-
 
 /* Nav Inner LOGO   */
 #Left-logo {
@@ -96,12 +78,11 @@ html::-webkit-scrollbar-thumb {
   font-size: 22px;
   font-weight: 900;
   cursor: pointer;
-  transition: 2s;
+  transition: 3s all linear;
 }
-.Logo::after
-{
+.Logo::after {
   content: "";
-  position:absolute;
+  position: absolute;
   background-color: #70ba65;
   height: 3px;
   width: 0%;
@@ -109,15 +90,11 @@ html::-webkit-scrollbar-thumb {
   top: 115%;
   transition: 3s;
 }
-.Logo:hover
-{
+.Logo:hover {
   color: #70ba65;
-
 }
-.Logo:hover::after
-{
+.Logo:hover::after {
   width: 100%;
-
 }
 /* Nav Inner LOGO End  */
 
@@ -146,39 +123,77 @@ html::-webkit-scrollbar-thumb {
   letter-spacing: 2px;
   padding: 0px 20px;
   position: relative;
-  
+  transition: all 2s linear;
 }
-#center-logo ul li ::before
-{
+#center-logo ul li ::before {
   content: "";
-  position:absolute;
+  position: absolute;
   height: 100%;
   width: 100%;
   left: 0%;
   top: 0%;
-  border-bottom: #70ba65 1px solid ;
-  border-top: #70ba65 1px solid ;
+  border-bottom: #70ba65 1px solid;
+  border-top: #70ba65 1px solid;
   transform: scaleY(5);
   opacity: 0;
   transition: 0.9s;
-  
 }
 
-#center-logo ul li:hover a
-{
+#center-logo ul li:hover a {
   color: #70ba65;
   font-weight: 900;
 }
-#center-logo ul li :hover::before   
-{
+#center-logo ul li :hover::before {
   transform: scaleY(1);
   opacity: 1;
 }
 
 /* Links in nav  End */
 
-#particles-js
-{
+#Home {
   height: 90vh;
-  margin: 1px 0px 0px 0px;
+  width: 100%;
+  /* border: #70ba65 3px solid; */
+}
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+}
+#s1 {
+  height: 100%;
+  width: 100%;
+  border: #101011 3px solid;
+  display: flex;
+}
+.cont {
+  border: #1818b4 3px solid;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont div {
+  /* display: flex; */
+  border: #45aad1 3px solid;
+  height: 35%;
+  /* align-items: center; */
+  /* justify-items: center; */
+}
+.cont div h1 {
+  font-size: 550%;
+  color: #70ba65;
+}
+
+
+
+#Img-home-1 {
+  height: 100%;
+  width: 50%;
+  border: #b43c18 3px solid;
 }
