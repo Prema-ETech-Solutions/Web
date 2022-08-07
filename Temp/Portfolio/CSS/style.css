@@ -60,7 +60,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 15px;
   margin: 10px auto 0px auto;
   z-index: 9;
-  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
+  box-shadow: inset 1px 5px 20px 11px rgb(0 0 0 / 50%);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   display: inline-flex;
@@ -208,7 +208,7 @@ html::-webkit-scrollbar-thumb {
   margin: 2% 1%;
   white-space: nowrap;
   /* background-color: #70ba65; */
-  box-shadow: 0 7px 44px 0 rgb(0 0 0 / 70%);
+  /* box-shadow: inset 0px 0px 20px 20px rgb(0 0 0 / 80%); */
   /* border: solid 2px #70ba65; */
   color: #000000;
   text-transform: uppercase;
@@ -225,6 +225,13 @@ html::-webkit-scrollbar-thumb {
   position: relative;
   transition: 2s;
 }
+
+#linkedin ,#github,#google,#instagram,#twitter,#meta
+{
+  /* transition: 9s linear ease-in-out; */
+  box-shadow: inset 0px 0px 20px 20px rgb(0 0 0 / 80%);
+}
+
 /* Home section content Side End */
 
 /* Home section img Side Start */
