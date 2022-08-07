@@ -43,7 +43,7 @@
 /* Nav Bar pages Links Animation End */
 
 /* Home Page Color changing Animation Start */
-.cont div h1 span {
+.cont-1 div h1 span {
   animation: color-change 30s linear infinite;
   /* font-size: 450%; */
   /* color: #70ba65; */
