@@ -375,13 +375,13 @@
   width: 0%;
   left: 0%;
   top: 125%;
-  transition: 5ss;
+  transition: 5s;
 }
 #about-btn:hover
 {
   transition: 2s ease-in-out;
   border-radius: 0px;
-  color:#70ba65;
+  color:#000000;
   background-color: transparent;
 }
 #about-btn:hover::after
