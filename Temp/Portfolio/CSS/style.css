@@ -250,7 +250,7 @@ html::-webkit-scrollbar-thumb {
   /* border: 3px solid sandybrown; */
   display: none;
   /* display: flex; */
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   /* border: #45aad1 3px solid; */
   box-shadow: inset 2px 8px 20px 13px rgb(0 0 0 / 80%);
