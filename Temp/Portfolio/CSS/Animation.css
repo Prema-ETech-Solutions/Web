@@ -415,3 +415,28 @@
   box-shadow: inset 0px 0px 20px 0px rgb(0 0 0 / 80%);
 }
 /* Home Social Animation End */
+
+/* Download CV BTN in About Start  */
+#Download-CV::after
+{
+  content: "";
+  background-color: #70ba65;
+  position: absolute;
+  height: 3px;
+  width: 00%;
+  left: 0%;
+  top: 110%;
+  transition: 5s;
+}
+#Download-CV:hover
+{
+  transition: 2s ease-in-out;
+  border-radius: 0px;
+  color:#000000;
+  background-color: transparent;
+}
+#Download-CV:hover::after
+{
+  width:100%;
+}
+/* Download CV BTN in About End  */
