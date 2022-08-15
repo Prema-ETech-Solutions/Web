@@ -130,7 +130,7 @@ html::-webkit-scrollbar-thumb {
 
 /* Section Home Started */
 #Home {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   /* border: #70ba65 3px solid; */
 }
@@ -374,13 +374,14 @@ html::-webkit-scrollbar-thumb {
 #about {
   height: 90vh;
   width: 100%;
-  border: #70ba65 5px solid;
+  /* border: #70ba65 5px solid; */
   display: block;
 }
 
-#title-about {
+#title-about
+{
   height: 10%;
-  border: #3fc02b 5px solid;
+  /* border: #3fc02b 5px solid; */
   display: flex;
   width: 100%;
   align-items: center;
@@ -388,11 +389,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 #Logo-about {
-  font-size: 300%;
-  margin-top: 11px;
-  font-weight: 800;
+  font-size: 350%;
+  /* margin-top: 11px; */
+  /* font-weight: 800; */
   /* text-decoration: underline; */
-
 }
 #me
 {
@@ -406,7 +406,7 @@ html::-webkit-scrollbar-thumb {
 
 #about-main-content {
   height: 90%;
-  border: #6c7a69 5px solid;
+  /* border: #6c7a69 5px solid; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -430,25 +430,23 @@ html::-webkit-scrollbar-thumb {
 
 #about-pic-content {
 
-  border: #2f4b6b 5px solid;
+  /* border: #2f4b6b 5px solid; */
   width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 560px;
   
 }
 #about-content {
   
-  border: #6a9cd4 5px solid;
+  /* border: #6a9cd4 5px solid; */
   width: 50%;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  min-height: 560px;
   
 }
 
@@ -456,10 +454,10 @@ html::-webkit-scrollbar-thumb {
 {
 /* border: #6a9cd4 5px solid; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start; 
   flex-wrap: wrap;
-  margin: 0% 0% 2% 0%;
+  margin: 0% 0% 02% 0%;
   /* margin: 3% 0% 0% 0% ; */
 }
 #about-content div h2
@@ -475,12 +473,13 @@ html::-webkit-scrollbar-thumb {
 #about-content div p
 {
   
-  margin: 1% 3% 1% 3%;
+  margin: 1% 5% 0% 0%;
   font-size: 14px;
   font-weight: 0;
 }
 .lables-about  
 {
+  margin: 2% 0% 0% 0%;
   /* border: #3fc02b 2px solid; */
   width: 50%;
   color: #42753b;
@@ -500,9 +499,9 @@ html::-webkit-scrollbar-thumb {
 {
   margin: 1% 0% 0% 0%;
   display: inline;
-  font-size: 12px;
+  font-size: 15px;
   padding: 0% 3px 0% 0% ;
-  font-weight: 600;
+  font-weight: 700;
 }
 #Download-CV
 {

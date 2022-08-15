@@ -109,14 +109,21 @@ function change_about_page()
     document.getElementById("Logo-about").classList.add("fa-id-card-clip");
   }
 
+  //About Values Starts 
+  document.getElementById("Ph").innerHTML = "+91-7039956119";
+  document.getElementById("Ph").style.color = "#000000";
+  document.getElementById("email").innerHTML = "premdangle@gmail.com";
+  document.getElementById("email").href = "mailto:premdangle@gmail.com";
+  document.getElementById("email").style.color = "#000000";
+  document.getElementById("age").innerHTML = "21";
+  document.getElementById("age").style.color = "#000000";
+  document.getElementById("place").innerHTML = "Mumbai,India-421202";
+  document.getElementById("place").style.color = "#000000";
+  
+  //About Values Ends 
 }
 // About Load Function End
 
-//About Values Starts 
-// document.getElementsByName("Ph").innerHTML = "+917039956119";
-document.getElementsByClassName("Ph").innerHTML = "+917039956119";
-
-//About Values Ends 
 
 
 
