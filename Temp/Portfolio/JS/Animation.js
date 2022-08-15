@@ -70,8 +70,8 @@ document.getElementById("about").addEventListener("load", change_about_page());
 function change_about_page()
 {
   let x = Math.floor(Math.random() * 4 + 1);
-  console.log(x);
-
+  // console.log(x);
+  
   if (x ==1)
   {
     document.getElementById("Logo-about").classList.remove("fa-id-card-clip");
@@ -112,7 +112,7 @@ function change_about_page()
   //About Values Starts 
   document.getElementById("Ph").innerHTML = "+91-7039956119";
   document.getElementById("Ph").style.color = "#000000";
-  document.getElementById("email").innerHTML = "premdangle@gmail.com";
+  document.getElementById("email").innerHTML = "Premdangle@gmail.com";
   document.getElementById("email").href = "mailto:premdangle@gmail.com";
   document.getElementById("email").style.color = "#000000";
   document.getElementById("age").innerHTML = "21";
@@ -125,7 +125,50 @@ function change_about_page()
 // About Load Function End
 
 
+document.getElementById("contact-me").addEventListener("load", change_contact_page());
 
+function change_contact_page()
+{
+  let x = Math.floor(Math.random() * 4 + 1);
+  // console.log(x);
+  
+  if (x ==1)
+  {
+    document.getElementById("Logo-contact").classList.remove("fa-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen");
+    document.getElementById("Logo-contact").classList.remove("fa-square-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen-button");
+    
+    document.getElementById("Logo-contact").classList.add("fa-phone");
+  }
+  else if (x ==2)
+  {
+    document.getElementById("Logo-contact").classList.remove("fa-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen");
+    document.getElementById("Logo-contact").classList.remove("fa-square-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen-button");
+    
+    document.getElementById("Logo-contact").classList.add("fa-mobile-screen");
+  }
+  else if (x ==3)
+  {
+    document.getElementById("Logo-contact").classList.remove("fa-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen");
+    document.getElementById("Logo-contact").classList.remove("fa-square-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen-button");
+    
+    document.getElementById("Logo-contact").classList.add("fa-square-phone");
+  }
+  else if (x ==4)
+  {
+    document.getElementById("Logo-contact").classList.remove("fa-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen");
+    document.getElementById("Logo-contact").classList.remove("fa-square-phone");
+    document.getElementById("Logo-contact").classList.remove("fa-mobile-screen-button");
+    
+    document.getElementById("Logo-contact").classList.add("fa-mobile-screen-button");
+  }
 
+}
 
 
