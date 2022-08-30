@@ -1,11 +1,12 @@
-<h2>I'm Prem</h2> 
-        <br>
-        <h3>Developer/Programmer</h3>
-        <p>
-          I am a Developer/Programmer based in Mumbai, India. 
-          I am an B.C.A(Bachelors's in Computer Application) undergraduate from SCMS (Sahyog College Of IT & MGNT). 
-          I am very passionate about improving my coding skills & developing applications & websites.
-          Working for myself to improve my skills. 
-          I like making fun, interactive things with code. 
-          I also talk & write about those things.
-        </p>
+<h2>Prem's Portfolio</h2>
+              <h4>Thank you for visiting my personal portfolio website. Connect with me over socials.</h4>
+              <h5>Keep Rising </h5>
+
+
+              <h2>Quick-Links</h2>
+            <a href="#Home"><i class="fa-solid fa-angle-right"></i> HOME</a>
+            <a href="#about"><i class="fa-solid fa-angle-right"></i> About</a>
+            <a href="#contact-me"><i class="fa-solid fa-angle-right"></i>Contact Me</a>
+
+
+            <h2 id="last-end">Made With <i class="fa-solid fa-heart me" ></i> By Prem Chandrashekhar Dangle</h2>

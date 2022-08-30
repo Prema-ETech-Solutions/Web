@@ -11,9 +11,9 @@ var typed = new Typed(".auto-typing", {
     "VB .NET",
   ],
   loop: true,
-  typeSpeed: 90,
-  backSpeed: 90,
-  backDelay: 1000,
+  typeSpeed: 30,
+  backSpeed: 30,
+  backDelay: 500,
 });
 // Auto typing Animation End
 
@@ -170,5 +170,3 @@ function change_contact_page()
   }
 
 }
-
-
