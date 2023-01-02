@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* overflow-y: hidden; */
+
+}
+
+*::selection {
+  background: #70ba65;
+  color: #fff;
+  /* color: transparent; */
+}
+
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 08px;
+}
+
+html::-webkit-scrollbar-track {
+  /* background: #67814e; */
+  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #68aa68;
+  box-shadow: 15px 15px 25px 15px rgb(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+
+  height: 100vh;
+  width: 100vw;
+  background-color: bisque;
+}

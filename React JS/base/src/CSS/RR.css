@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+#nave {
+    background-color: aqua;
+    height: 50px;
+    width: 100vw;
+    position: sticky;
+    /* top: 1px; */
+    scroll-behavior: smooth;
+    z-index: 9;
+    /* height: fit-content; */
+    padding: 0% 1% 0px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#uli
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-data
+{
+    margin: 0% 5% 0% 5%;
+}
+
+.Home-
+{
+
+    background-color: black;
+    color: aliceblue;
+    height:100%;
+    /* margin: 0; */
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home- label
+{
+    font-size:1000%;
+    font-weight: 900;
+
+}

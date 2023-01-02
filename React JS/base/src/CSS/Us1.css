@@ -1,0 +1,28 @@
+#outer {
+    display: flex;
+    /* background-color: firebrick; */
+}
+
+.us-a {
+    margin: 0px 3% 0px 3%;
+    height: 50%;
+    width: 5%;
+}
+
+
+.color-class {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.Light {
+    background-color: whitesmoke;
+}
+
+.Dark {
+    background-color: black;
+}

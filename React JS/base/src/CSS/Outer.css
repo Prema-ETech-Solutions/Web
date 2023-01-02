@@ -1,0 +1,36 @@
+#Outer
+{
+    /* height: 500px; */
+    width: 100%;
+    
+}
+#button-outer
+{
+    background-color: rgb(48, 135, 90);
+    display: flex;
+    justify-content: center;
+    
+}
+#outer-in
+{
+    display: flex;
+    
+}
+
+#one , #two
+{
+    height: 200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#bottom
+{
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
