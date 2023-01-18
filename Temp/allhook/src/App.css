@@ -1,0 +1,58 @@
+.con
+{
+  background-color: dodgerblue;
+  min-width: 100vw;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  flex-direction: column;
+}
+.cen
+{
+
+  color: antiquewhite;
+  background-color: transparent;
+  border: 0px;
+}
+.m-y
+{
+ margin: 0px 0px 0px 10px;
+ border: black 1px solid; 
+}
+
+#name
+{
+  border: black 2px solid; 
+}
+#lab
+{
+  color: rgba(255, 12, 12, 0.699);
+  background-color: antiquewhite; 
+}
+#Login-base
+{
+  min-height :50vh;
+  min-width: 100vw;
+  background-color: crimson;
+  /* margin: 1px 1px 1px 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#inner-base
+{
+  background-color: rgb(6, 63, 95);
+  min-height: 300px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.getval
+{
+  margin: 10px;
+}
