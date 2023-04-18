@@ -112,3 +112,80 @@ console.log(fruits);
 
 
 // https://www.w3schools.com/js/js_array_methods.asp
+
+
+
+// Sorting an Array
+// The sort() method sorts an array alphabetically:
+console.log(fruits.sort());
+
+
+// Reversing an Array
+// The reverse() method reverses the elements in an array.
+
+// You can use it to sort an array in descending order:
+
+console.log(fruits.sort());
+console.log(fruits.reverse());
+
+
+
+
+// Numeric Sort
+// By default, the sort() function sorts values as strings.
+
+// This works well for strings ("Apple" comes before "Banana").
+
+// However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+
+// Because of this, the sort() method will produce incorrect result when sorting numbers.
+
+// You can fix this by providing a compare function:
+
+
+
+const points = [40, 100, 1, 5, 25, 10];
+console.log(points.sort(function(a, b){return a - b}));
+console.log(points.sort(function (a, b) { return b - a }));
+
+
+
+// https://www.w3schools.com/js/js_array_sort.asp
+
+
+
+
+// The forEach() method calls a function (a callback function) once for each array element.
+const numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  // txt += value + "<br>";
+  console.log(value);
+  console.log(index);
+  console.log();
+}
+console.log();
+console.log();
+
+
+// JavaScript Array map()
+// The map() method creates a new array by performing a function on each array element.
+
+// The map() method does not execute the function for array elements without values.
+
+// The map() method does not change the original array.
+
+// This example multiplies each array value by 2:
+
+
+
+const numbers1 = [1,4,5,6,7,7,7,5,4,2];
+const numbers2 = numbers1.map(myFunction1);
+
+function myFunction1(value) {
+  console.log(value);
+}
+
+// https://www.w3schools.com/js/js_array_iteration.asp
+
