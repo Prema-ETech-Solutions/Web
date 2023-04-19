@@ -28,3 +28,4 @@ console.log(fruits.get("apples"));
 
 fruits.set("car", 200);
 console.log(fruits);
+
