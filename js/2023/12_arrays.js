@@ -112,3 +112,8 @@ console.log(fruits);
 
 
 // https://www.w3schools.com/js/js_array_methods.asp
+
+const el = ["apple", "banana"];
+console.log(el);
+el[0] = "";
+console.log(el);
