@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const url = require("url");
 
 
 
@@ -9,12 +10,15 @@ const myServer = http.createServer((req, res) => {
     // console.log(req);
     console.log(req.url);
 
-    fs.appendFile("logs.txt", new Date().toISOString() + " - " + req.url + "\n", (err) => {
+    fs.appendFile("logs.txt", new Date().toISOString() + " - Route Type - " + req.url + " - Req Type - " + req.method + "\n", (err) => {
         if (err) {
 
         }
     });
-    switch (req.url) {
+
+    myUrl = url.parse(req.url, true);
+    console.log(myUrl);
+    switch (myUrl.pathname) {
         case "/":
             res.writeHead(200, { "Content-Type": "text/html" });
             res.end("Home Page");
