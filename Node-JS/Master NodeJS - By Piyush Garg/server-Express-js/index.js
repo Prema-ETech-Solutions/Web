@@ -11,14 +11,34 @@ app.get('/about', (req, res) => {
 });
 
 
-const Endspoints = {
+
+const show = () => {
+    res.send('Show World!');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+const Endpoints = {
     '/test': (req, res) => { res.send('Test World!'); },
     '/blog': (req, res) => { res.send('Blog World!'); },
+    '/show': show
 };
 
-Object.keys(Endspoints).forEach((endpoint) => {
-    app.get(endpoint, Endspoints[endpoint]);
+Object.keys(Endpoints).forEach((endpoint) => {
+    app.get(endpoint, Endpoints[endpoint]);
 });
+
+
+
 
 
 
