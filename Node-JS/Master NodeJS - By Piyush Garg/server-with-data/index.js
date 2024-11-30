@@ -4,7 +4,6 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
-
 // A simple logging middleware
 function logger(req, res, next) {
     console.log(`${req.method} ${req.url}`);
@@ -13,14 +12,14 @@ function logger(req, res, next) {
 
 // A middleware to add a custom header
 function customHeader(req, res, next) {
-    res.setHeader('X-Custom-Header', 'Learning Express');
+    res.setHeader("X-Custom-Header", "Learning Express");
     next();
 }
 
 // A middleware to check for a query parameter
 function checkQuery(req, res, next) {
     if (!req.query.token) {
-        return res.status(400).send('Token is required!');
+        return res.status(400).send("Token is required!");
     }
     next();
 }
@@ -28,20 +27,14 @@ function checkQuery(req, res, next) {
 // Use the logger middleware for all routes
 app.use(logger);
 
-
-
 app.get("/ping", (req, res) => {
     return res.send("pong");
 });
 
-
-
 app.get("/api/users", (req, res) => {
     const data = require("./MOCK_DATA.json");
     return res.json(data);
-
 });
-
 
 app.get("/users", (req, res) => {
     html = ``;
@@ -73,7 +66,6 @@ app.get("/users/:id", (req, res) => {
     return res.send(html);
 });
 
-
 app.use(express.urlencoded({ extended: false }));
 
 app.post("/api/set", (req, res) => {
@@ -83,7 +75,7 @@ app.post("/api/set", (req, res) => {
     userData.push({ ...body, id: userData.length + 1 });
     // return res.json(body);
     // userData.push(newUser);
-    fs.writeFile('./MOCK_DATA.json', JSON.stringify(userData), (err) => {
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(userData), (err) => {
         if (err) {
             return res.json({ status: false, message: "Error in writing file" });
             // return res.send();
@@ -102,11 +94,7 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-
-
-
-
-// Status Codes 
+// Status Codes
 // ### 1xx: Informational Responses
 // 100 Continue
 // 101 Switching Protocols
