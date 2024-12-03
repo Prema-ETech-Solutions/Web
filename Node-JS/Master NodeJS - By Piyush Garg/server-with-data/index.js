@@ -67,6 +67,7 @@ app.get("/users/:id", (req, res) => {
 });
 
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.post("/api/set", (req, res) => {
     const userData = require("./MOCK_DATA.json");
@@ -86,6 +87,96 @@ app.post("/api/set", (req, res) => {
 
 
 
+app.patch("/api/update", async (req, res) => {
+    query = req.query
+    if (query.id == undefined) {
+
+        return res.json({ status: true, data: { message: "UserId is Missing " } });
+    }
+    const userId = parseInt(query.id, 10);
+
+    const userData = require("./MOCK_DATA.json");
+    const user = userData.findIndex((u) => u.id === userId);
+
+    if (user == -1) {
+        return res.status(404).json({ status: false, data: { message: "User not found" } });
+    }
+    body = req.body;
+    if (!body || Object.keys(body).length === 0) {
+        return res.status(400).json({ status: false, data: { message: "No data provided for update" } });
+    }
+    const newval = {}
+    Object.keys(body).forEach((item) => {
+        // console.log(item)
+        const keys = ["first_name",
+            "last_name",
+            "email",
+            "gender",
+            "ip_address",
+            "username"];
+        const key = keys.find((k) =>
+            k === item
+        )
+        if (!key) { }
+        else {
+            newval[key] = body[key]
+
+        }
+
+    });
+
+
+    Object.keys(newval).forEach(key => {
+        if (key in userData[user]) { // Only update existing keys
+            userData[user][key] = newval[key];
+        }
+    });
+
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(userData), (err) => {
+        if (err) {
+            return res.json({ status: false, message: "Error in writing file" });
+            // return res.send();
+        }
+        return res.json({ status: true, id: userData[user]["id"] });
+    });
+
+
+    // return res.json({ status: true, data: { Id: user } });
+
+
+});
+
+
+
+app.delete("/api/delete", async (req, res) => {
+
+    query = req.query
+    if (query.id == undefined) {
+
+        return res.json({ status: true, data: { message: "UserId is Missing " } });
+    }
+    const userId = parseInt(query.id, 10);
+
+    const userData = require("./MOCK_DATA.json");
+    const user = userData.findIndex((u) => u.id === userId);
+
+    if (user == -1) {
+        return res.status(404).json({ status: false, data: { message: "User not found" } });
+    }
+
+
+    const newobj = userData.filter(obj => obj.id !== userId);
+
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(newobj), (err) => {
+        if (err) {
+            return res.json({ status: false, message: "Error in writing file" });
+            // return res.send();
+        }
+        return res.json({ status: true, id: userId });
+    });
+
+
+});
 
 
 
