@@ -20,6 +20,7 @@ const itemSchema = new mongoose.Schema({
     ip_address: { type: String, required: true },
     username: { type: String, required: true },
     createdAt: { type: Date, default: Date.now },
+    car: { type: String },
 });
 
 const Item = mongoose.model('users', itemSchema);
@@ -38,7 +39,7 @@ const mockData = {
 mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
-        initializeMockData();
+        // initializeMockData();
     })
     .catch((err) => console.error('Error connecting to MongoDB:', err));
 
@@ -60,7 +61,7 @@ async function initializeMockData() {
 // REST API Routes
 
 // GET: Fetch all items
-app.get('/api/items', async (req, res) => {
+app.get('/api/users', async (req, res) => {
     try {
         const items = await Item.find();
         res.json(items);
@@ -70,7 +71,7 @@ app.get('/api/items', async (req, res) => {
 });
 
 // POST: Add a new item
-app.post('/api/items', async (req, res) => {
+app.post('/api/users', async (req, res) => {
     try {
         const newItem = new Item(req.body);
         const savedItem = await newItem.save();
@@ -81,7 +82,7 @@ app.post('/api/items', async (req, res) => {
 });
 
 // PUT: Update an item by ID
-app.put('/api/items/:id', async (req, res) => {
+app.put('/api/users/:id', async (req, res) => {
     try {
         const updatedItem = await Item.findOneAndUpdate({ id: req.params.id }, req.body, { new: true });
         if (!updatedItem) {
@@ -94,7 +95,7 @@ app.put('/api/items/:id', async (req, res) => {
 });
 
 // DELETE: Remove an item by ID
-app.delete('/api/items/:id', async (req, res) => {
+app.delete('/api/users/:id', async (req, res) => {
     try {
         const deletedItem = await Item.findOneAndDelete({ id: req.params.id });
         if (!deletedItem) {
