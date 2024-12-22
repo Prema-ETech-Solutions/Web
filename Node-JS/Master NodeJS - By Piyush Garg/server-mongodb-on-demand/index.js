@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import { connectDB } from './config/database.js';
+import { connectDB, disconnectDB } from './config/database.js';
 import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
@@ -13,6 +13,7 @@ app.use(express.json());
 
 // Connect to MongoDB
 connectDB(MONGO_URI);
+disconnectDB();
 
 // Routes
 app.use('/api/users', userRoutes);
